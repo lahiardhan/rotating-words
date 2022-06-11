@@ -1,0 +1,47 @@
+
+.rotatingText {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  height: 18px;
+  display: flex;
+}
+
+span.words {
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+span.rotatingText-adjective {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: rotate infinite 5s;
+}
+
+@keyframes rotate {
+  10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
